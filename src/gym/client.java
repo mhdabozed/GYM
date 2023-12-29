@@ -5,12 +5,14 @@
  */
 
 package gym;
+import java.util.Scanner;
 
 /**
  *
  * @author MHD abo zed
  */
 public class client extends stakeholders {
+    Scanner scan=new Scanner(System.in);
     private int age;
     private int wight ;
     private int hight;
@@ -20,5 +22,11 @@ public class client extends stakeholders {
         this.age = age;
         this.wight = wight;
         this.hight = hight;
+        System.out.println("enter age");
+        age=scan.nextInt();
+        System.out.println("enter wight");
+        wight=scan.nextInt();
+        System.out.println("enter hight");
+        hight=scan.nextInt();
     }
 }

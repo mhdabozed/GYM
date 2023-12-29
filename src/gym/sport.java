@@ -4,12 +4,14 @@
  * and open the template in the editor.
  */
 package gym;
-import 
+import java.util.Scanner;
+
 /**
  *
  * @author MHD abo zed
  */
 public class sport {
+    Scanner scan=new Scanner(System.in);
 private int id;
 private String name;
 private int roomnum;
@@ -26,8 +28,21 @@ private int subprice;
         this.timing = timing;
         this.coach_name = coach_name;
         this.subprice = subprice;
+        System.out.println("enter the name of sport you want to add");
+        name =scan.next();
+        System.out.println("enter the id");
+        id =scan.nextInt();
+        System.out.println("enter the room numeber");
+        roomnum= scan.nextInt();
+        System.out.println("enter the time of sport");
+        timing = scan.nextInt();
+        System.out.println("enter the coach name");
+        coach_name=scan.next();
+        System.out.println("enter number of places");
+        number_of_places= scan.nextInt();
+        System.out.println("enter subscribe price");
+        subprice=scan.nextInt();
     }
-
     public int getId() {
         return id;
     }
@@ -83,4 +98,5 @@ private int subprice;
     public void setSubprice(int subprice) {
         this.subprice = subprice;
     }
+
 }
