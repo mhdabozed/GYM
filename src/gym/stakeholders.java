@@ -25,14 +25,6 @@ public class stakeholders {
         this.gender = gender;
         this.phone = phone;
         this.type= type;
-        System.out.println("enter first name");
-        firstname= scan.next();
-        System.out.println("enter last name");
-        lastname= scan.next();
-        System.out.println("enter the gender");
-        gender=scan.next();
-        System.out.println("enter the phone");
-        phone=scan.next();
     }
 
     public stakeholders(String firstname, String lastname, String gender, String phone) {
