@@ -72,6 +72,7 @@ public class GYM {
                 hight=scan.nextInt();
                 client []cl1=new client[50];
             }
+            //hello niga;
             else if (i=="sp"){
                 System.out.println("enter the name of sport you want to add");
                 sp_name =scan.nextLine();
