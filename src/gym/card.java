@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class card {
     Scanner scan=new Scanner(System.in);
-    private int card_numper;
+    private int card_number;
     private int start_date;
     private int end_date;
     private Card_type sub_type;

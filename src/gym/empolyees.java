@@ -35,5 +35,21 @@ public class empolyees extends stakeholders {
     public void setPassword(String password) {
         this.password = password;
     }
-
+public void ente (){
+    empolyees[] e1 = new empolyees [50] ;
+    System.out.println("enter the first name");
+    firstname = scan.nextLine();
+    System.out.println("enter the last name");
+    lastname = scan.nextLine();
+    System.out.println("enter the gender");
+    gender = scan.nextLine();
+    System.out.println("enter phone number");
+    phone = scan.nextLine();
+    System.out.println("enter user name");
+    username = scan.nextLine();
+    System.out.println("enter password");
+    password = scan.nextLine();
+    e1[0] = new empolyees(firstname, lastname, gender, phone, username, password);
+    }
 }
+

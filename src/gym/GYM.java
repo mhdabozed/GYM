@@ -5,6 +5,7 @@
  */
 package gym;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  *
@@ -37,59 +38,89 @@ public class GYM {
         String coach_name;
         int number_of_places;
         int subprice;
+        ArrayList <Integer> cl1 = new ArrayList <Integer> () ;
+        ArrayList <Integer> e1 = new ArrayList <Integer> () ;
+        ArrayList <Integer> sp1 = new ArrayList <Integer> () ;
+        String j;
         String i;
+        String k;
+        do{
+        System.out.println("what do you want to do [add,search,end]");
+        j=scan.nextLine();
+        if (j.equals("add")){
+
+    do{
         System.out.println("what you want to add[em,cl,sp,end]");
         i = scan.nextLine();
-            if (i == "em") {
-                System.out.println("enter the first name");
-                first_name = scan.nextLine();
-                System.out.println("enter the last name");
-                last_name = scan.nextLine();
-                System.out.println("enter the gender");
-                gender = scan.nextLine();
-                System.out.println("enter phone number");
-                phone = scan.nextLine();
-                System.out.println("enter user name");
-                username = scan.nextLine();
-                System.out.println("enter password");
-                password = scan.nextLine();
-                empolyees[] e1 = new empolyees [50] ;
+
+    if (i.equals("em")) {
+        System.out.println("enter the first name");
+        first_name = scan.nextLine();
+        System.out.println("enter the last name");
+        last_name = scan.nextLine();
+        System.out.println("enter the gender");
+        gender = scan.nextLine();
+        System.out.println("enter phone number");
+        phone = scan.nextLine();
+        System.out.println("enter user name");
+        username = scan.nextLine();
+        System.out.println("enter password");
+        password = scan.nextLine();
+        e1.toArray();
+    } else if (i.equals("cl")) {
+        System.out.println("enter the first name");
+        first_name = scan.nextLine();
+        System.out.println("enter the last name");
+        last_name = scan.nextLine();
+        System.out.println("enter the gender");
+        gender = scan.nextLine();
+        System.out.println("enter phone number");
+        phone = scan.nextLine();
+        System.out.println("enter age");
+        age = scan.nextInt();
+        System.out.println("enter wight");
+        wight = scan.nextInt();
+        System.out.println("enter hight");
+        hight = scan.nextInt();
+        cl1.toArray();
+
+    }
+    //hello niga;
+    else if (i.equals("sp")) {
+        System.out.println("enter the name of sport you want to add");
+        sp_name = scan.nextLine();
+        System.out.println("enter the id");
+        sp_id = scan.nextInt();
+        System.out.println("enter the room numeber");
+        roomnum = scan.nextInt();
+        System.out.println("enter the time of sport");
+        timing = scan.nextInt();
+        System.out.println("enter the coach name");
+        coach_name = scan.nextLine();
+        System.out.println("enter number of places");
+        number_of_places = scan.nextInt();
+        System.out.println("enter subscribe price");
+        subprice = scan.nextInt();
+        sp1.toArray();
+    }}while (!i.equals("end") );}
+        else if(j.equals("search"))
+        {
+            System.out.println("what you want to search for[em,sp,cl,end]");
+            k=scan.nextLine();
+            if(k.equals("em")){
+                String name1;
+                System.out.println("what the name of emp you want to search");
+                name1=scan.nextLine();
+            for(int i1=0;i1> e1.size();i1++) {
+
+
+
+                }
+
+
             }
-            else if(i=="cl"){
-                System.out.println("enter the first name");
-                first_name = scan.nextLine();
-                System.out.println("enter the last name");
-                last_name = scan.nextLine();
-                System.out.println("enter the gender");
-                gender = scan.nextLine();
-                System.out.println("enter phone number");
-                phone = scan.nextLine();
-                System.out.println("enter age");
-                age=scan.nextInt();
-                System.out.println("enter wight");
-                wight=scan.nextInt();
-                System.out.println("enter hight");
-                hight=scan.nextInt();
-                client []cl1=new client[50];
-            }
-            //hello niga;
-            else if (i=="sp"){
-                System.out.println("enter the name of sport you want to add");
-                sp_name =scan.nextLine();
-                System.out.println("enter the id");
-                sp_id =scan.nextInt();
-                System.out.println("enter the room numeber");
-                roomnum= scan.nextInt();
-                System.out.println("enter the time of sport");
-                timing = scan.nextInt();
-                System.out.println("enter the coach name");
-                coach_name=scan.nextLine();
-                System.out.println("enter number of places");
-                number_of_places= scan.nextInt();
-                System.out.println("enter subscribe price");
-                subprice=scan.nextInt();
-                sport []sp1=new sport[50];
-            }
+        }}while (!j.equals("end"));
+
         } }
 
 
