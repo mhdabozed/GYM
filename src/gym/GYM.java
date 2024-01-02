@@ -38,9 +38,9 @@ public class GYM {
         String coach_name;
         int number_of_places;
         int subprice;
-        ArrayList <Integer> cl1 = new ArrayList <Integer> () ;
-        ArrayList <Integer> e1 = new ArrayList <Integer> () ;
-        ArrayList <Integer> sp1 = new ArrayList <Integer> () ;
+        ArrayList <client> cl1 = new ArrayList <client> () ;
+        ArrayList <empolyees> e1 = new ArrayList <empolyees> () ;
+        ArrayList <sport> sp1 = new ArrayList <sport> () ;
         String j;
         String i;
         String k;
@@ -85,7 +85,6 @@ public class GYM {
         cl1.toArray();
 
     }
-    //hello niga;
     else if (i.equals("sp")) {
         System.out.println("enter the name of sport you want to add");
         sp_name = scan.nextLine();
