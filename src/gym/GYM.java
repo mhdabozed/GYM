@@ -140,7 +140,7 @@ public class GYM {
                 name1=scan.nextLine();
                 for(int i2=0;i2> e1.size();i2++){
                     if(cl1.get(i2).firstname.equals(name1)){
-                        System.out.println(cl1);
+                        System.out.println(ca);
                     }
                     else
                         i2++;
