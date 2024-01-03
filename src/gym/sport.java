@@ -11,6 +11,7 @@ import java.util.Scanner;
  * @author MHD abo zed
  */
 public class sport {
+
     Scanner scan=new Scanner(System.in);
 private int id;
 private String name;

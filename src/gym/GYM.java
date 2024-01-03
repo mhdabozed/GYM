@@ -44,8 +44,10 @@ public class GYM {
         String j;
         String i;
         String k;
+        String name1;
+
         do{
-        System.out.println("what do you want to do [add,search,end]");
+        System.out.println("what do you want to do [add,search,card,end]");
         j=scan.nextLine();
         if (j.equals("add")){
 
@@ -66,7 +68,8 @@ public class GYM {
         username = scan.nextLine();
         System.out.println("enter password");
         password = scan.nextLine();
-        e1.toArray();
+        e1.add(new empolyees(first_name,last_name,gender,phone,username,password));
+
     } else if (i.equals("cl")) {
         System.out.println("enter the first name");
         first_name = scan.nextLine();
@@ -82,8 +85,8 @@ public class GYM {
         wight = scan.nextInt();
         System.out.println("enter hight");
         hight = scan.nextInt();
-        cl1.toArray();
-
+        cl1.add(new client(first_name,last_name,gender,phone, age,wight,hight));
+        ArrayList <sport> sport = new ArrayList <sport> () ;
     }
     else if (i.equals("sp")) {
         System.out.println("enter the name of sport you want to add");
@@ -100,25 +103,47 @@ public class GYM {
         number_of_places = scan.nextInt();
         System.out.println("enter subscribe price");
         subprice = scan.nextInt();
-        sp1.toArray();
+        sp1.add(new sport(sp_id,sp_name,roomnum,number_of_places,timing,coach_name,subprice));
     }}while (!i.equals("end") );}
+
         else if(j.equals("search"))
         {
             System.out.println("what you want to search for[em,sp,cl,end]");
             k=scan.nextLine();
             if(k.equals("em")){
-                String name1;
+
                 System.out.println("what the name of emp you want to search");
                 name1=scan.nextLine();
             for(int i1=0;i1> e1.size();i1++) {
-
-
-
+                if(e1.get(i1).firstname.equals(name1)){
+                    System.out.println(e1);
+                }
+                else
+                    i1++;
                 }
 
-
+        }
+            else if(k.equals("cl")){
+                System.out.println("what the name of client you want to search");
+                name1=scan.nextLine();
+                for(int i2=0;i2> e1.size();i2++){
+                    if(cl1.get(i2).firstname.equals(name1)){
+                        System.out.println(cl1);
+                    }
+                    else
+                        i2++;
+                }
             }
-        }}while (!j.equals("end"));
+
+                    }}while (!j.equals("end"));
+                                                                                                             
+
+
+
+
+
+
+
 
         } }
 

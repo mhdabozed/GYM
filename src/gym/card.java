@@ -6,7 +6,7 @@
 package gym;
 
 import java.util.Scanner;
-
+import java.util.Date;
 /**
  *
  * @author MHD abo zed
@@ -14,9 +14,13 @@ import java.util.Scanner;
 public class card {
     Scanner scan=new Scanner(System.in);
     private int card_number;
-    private int start_date;
-    private int end_date;
+    private Date start_date;
+    private Date end_date;
     private Card_type sub_type;
-    
+
+public void create(){
 
 }
+
+}
+
