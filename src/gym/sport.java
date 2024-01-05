@@ -14,9 +14,9 @@ public class sport {
 
     Scanner scan=new Scanner(System.in);
 private int id;
-private String name;
+private static String name;
 private int roomnum;
-private int number_of_places;
+private static int number_of_places;
 private int timing;
 private String coach_name;
 private int subprice;
@@ -47,7 +47,7 @@ private int subprice;
         this.id = id;
     }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
@@ -55,7 +55,7 @@ private int subprice;
         this.name = name;
     }
 
-    public int getNumber_of_places() {
+    public static int getNumber_of_places() {
         return number_of_places;
     }
 

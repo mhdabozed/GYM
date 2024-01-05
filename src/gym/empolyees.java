@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author MHD abo zed
  */
-public class empolyees extends stakeholders {
+public class  empolyees extends stakeholders {
     Scanner scan =new Scanner(System.in);
      private String username;
      private String password;
@@ -35,8 +35,7 @@ public class empolyees extends stakeholders {
     public void setPassword(String password) {
         this.password = password;
     }
-public void ente (){
-    empolyees[] e1 = new empolyees [50] ;
+  void ente (String firstname, String lastname, String gender, String phone,String username, String password){
     System.out.println("enter the first name");
     firstname = scan.nextLine();
     System.out.println("enter the last name");
@@ -49,7 +48,6 @@ public void ente (){
     username = scan.nextLine();
     System.out.println("enter password");
     password = scan.nextLine();
-    e1[0] = new empolyees(firstname, lastname, gender, phone, username, password);
     }
 }
 

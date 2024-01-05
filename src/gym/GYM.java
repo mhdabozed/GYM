@@ -1,4 +1,4 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -55,11 +55,9 @@ public class GYM {
         System.out.println("what do you want to do [add,search,card,end]");
         j=scan.nextLine();
         if (j.equals("add")){
-
     do{
         System.out.println("what you want to add[em,cl,sp,end]");
         i = scan.nextLine();
-
     if (i.equals("em")) {
         System.out.println("enter the first name");
         first_name = scan.nextLine();
@@ -80,7 +78,7 @@ public class GYM {
         sp_name = scan.nextLine();
         System.out.println("enter the id");
         sp_id = scan.nextInt();
-        System.out.println("enter the room numeber");
+        System.out.println("enter the room number");
         roomnum = scan.nextInt();
         System.out.println("enter the time of sport");
         timing = scan.nextInt();
@@ -114,6 +112,14 @@ public class GYM {
         int sp_type= scan.nextInt();
         card_num +=1;
           ca.add(new card(card_num));
+        if(sp_type==1){
+        Card_type.normal.getDiscount();
+        }
+        else if(sp_type==2){
+            Card_type.silver.getDiscount();
+        }else
+            Card_type.gold.getDiscount();
+
     }
 
     }while (!i.equals("end") );}
@@ -138,7 +144,7 @@ public class GYM {
             else if(k.equals("cl")){
                 System.out.println("what the name of client you want to search");
                 name1=scan.nextLine();
-                for(int i2=0;i2> e1.size();i2++){
+                for(int i2=0;i2> cl1.size();i2++){
                     if(cl1.get(i2).firstname.equals(name1)){
                         System.out.println(ca);
                     }
@@ -148,7 +154,12 @@ public class GYM {
             }
 
                     }}while (!j.equals("end"));
-                                                                                                             
+        for (int n = 0; n < sp1.size(); n++) {
+  sport spor = sp1.get(n);
+            System.out.println((n+1) + ". " + sport.getName() + " - " + sport.getNumber_of_places() + " places");
+        }
+
+
 
 
 
