@@ -158,7 +158,7 @@ public class GYM {
   sport spor = sp1.get(n);
             System.out.println((n+1) + ". " + sport.getName() + " - " + sport.getNumber_of_places() + " places");
         }
-
+//what's up
 
 
 
